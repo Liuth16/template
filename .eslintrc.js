@@ -11,4 +11,14 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
+  rules: {
+    "comma-dangle": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        trailingComma: "es5",
+      },
+    ],
+  },
+  ignorePatterns: ["webpack.*.js"],
 };
